@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    background-color: #dadada94;
+    font-size: 15px;
+}
+.side-menu-header
+{
+    background-color: #117a8b!important;
+    li{
+      a{
+        line-height: 35px;
+        i{
+          width: 30px;
+          font-size: 23px;
+    margin-right: 10px;
+    /* max-block-size: 17px; */
+    position: relative;
+    top: 3px;
+        }
+      }
+    }
+}
+.bg-white
+{
+  background-color: #ffffff!important;
+}
+
+.table-title{
+  font-size: 17px;
+}
+.padding-left-250{
+    padding-left: 250px;
+}
+.margin-top-10{
+  margin-top:10px;
+}
+
+.padding-top-10
+{
+    padding-top: 10px;
+}
+.margin-bottom-10
+{
+    margin-bottom: 10px;
+}
+
+.boxcard{
+     background-color: white;
+     padding: 16px;
+}
+.dashboard-icon{
+    margin-bottom: 12px;
+    margin-top: 10px;
+    i{
+        font-size: 20px;
+        
+        padding: 7px 8px;
+        border-radius: 50%;
+    }
+    .icon-succes{
+        color: #0c9!important;
+        background-color: #ccf5eb!important;
+    }
+    .icon-warning{
+        color: #f7bc06!important;
+        background-color: #fdf2cd!important;
+    }
+    .icon-danger{
+        color: #f2545b!important;
+        background-color: #fcddde!important;
+    }
+    .icon-info{
+        color: #19b5fe!important;
+        background-color: #d1f0ff!important;
+    }
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background-color: #ccc;
+}
+.userProfiile{
+  font-size: 36px;
+    color: #b7b7b7;
+ // background: white;
+    //height: 45px;
+    //width: 45px;
+    //border-radius: 50%;
+    //outline: none;
+    //border: none;
+    //box-shadow: 0px 1px 1px #969696;
+}
+.nav-link:hover {
+  transition: all 0.4s;
+}
+
+.nav-link-collapse:after {
+  float: right;
+  content: "\f077";
+  font-family: 'FontAwesome';
+}
+
+.nav-link-show:after {
+  float: right;
+  content: '\f078';
+  font-family: 'FontAwesome';
+}
+
+.nav-item ul.nav-second-level {
+  padding-left: 0;
+}
+
+.nav-item ul.nav-second-level > .nav-item {
+  padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: calc(100vh - 3.5rem);
+    margin-top: 3.5rem;
+    background: #343a40;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-expand-lg .sidenav {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    margin-left: 230px;
+  }
+
+  .footer {
+    width: calc(100% - 230px);
+    margin-left: 230px;
+  }
+}

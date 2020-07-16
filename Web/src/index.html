@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>  
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    $(document).ready(function() {
+  $('.nav-link-collapse').on('click', function() {
+    $('.nav-link-collapse').not(this).removeClass('nav-link-show');
+    $(this).toggleClass('nav-link-show');
+  });
+});
+
+  </script>
+</body>
+</html>

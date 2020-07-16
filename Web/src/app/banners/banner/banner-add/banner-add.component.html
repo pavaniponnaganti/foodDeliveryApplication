@@ -1,0 +1,71 @@
+<div class="padding-left-250">
+    <h4>Add New</h4>
+    <div class="col-sm-12">
+        <div class="boxcard">
+           <div class="padding-top-10">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label >Select City</label>
+                            <select class="form-control" id="city" name="city" [(ngModel)]="bannermod.city" >
+                              <option>All Cities</option>
+                              <option value="bangalore">Bangalore</option>   
+                              <option value="vizag">Vishakapattanam</option>  
+                              <option value="TamilNadu">Tiruvanammalai</option> 
+                              <option value="chennail">Chennai</option>              
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="position">Banner Position</label>
+                            <select class="form-control" id="position" name="position" [(ngModel)]="bannermod.position" >
+                              <option>Select</option>
+                              <option value="top">Top</option>
+                              <option value="medium">Medium</option>
+                              <option value="bottom">Bottom</option>  
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="sel1">Select Restaurants</label>
+                            <select class="form-control" id="sel1" [(ngModel)]="bannermod.restaurants" name="sellist1">
+                              <option>All Cities</option>
+                              <option>Bangalore</option>              
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="sel1">Status</label>
+                            <select class="form-control" id="sel1" [(ngModel)]="bannermod.status"  name="sellist1">
+                                <option>Active</option>
+                                <option>InActive</option>              
+                              </select>                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" [(ngModel)]="bannermod.image" id="customFile" name="filename" >
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                          </div> 
+                    </div>                            
+                </div>
+                <div class="row">
+                    <button class="btn btn-success" (click)="save(bannermod)">  
+                        SAVE CHANGES
+                    </button>
+                </div>                
+            </form>
+           </div>
+            
+        </div>
+    </div>
+</div>

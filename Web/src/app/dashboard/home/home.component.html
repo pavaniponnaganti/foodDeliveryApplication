@@ -1,0 +1,88 @@
+<div class="padding-left-250">
+     
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-3">
+        <div class="boxcard text-center">
+            <div class="dashboard-icon">
+                <i class="fa fa-home icon-succes" aria-hidden="true"></i>
+            </div>
+            
+            Toatal Store
+        </div>
+        
+    </div>
+    <div class="col-sm-3">
+        <div class="boxcard text-center">
+            <div class="dashboard-icon">
+                <i class="fa fa-cart-plus icon-danger" aria-hidden="true"></i>
+            </div>
+            
+            Toatal Orders
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="boxcard text-center">
+            <div class="dashboard-icon">
+                <i class="fa fa-calendar-check-o icon-warning" aria-hidden="true"></i>
+            </div>
+            Completed Orders
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="boxcard text-center">
+            <div class="dashboard-icon">
+                <i class="fa fa-cart-plus icon-info" aria-hidden="true"></i>
+            </div>
+            This month Orders
+        </div>        
+    </div>
+</div>
+
+
+<div class="row margin-top-10">
+    <div class="col-sm-12 " >
+        <div class="boxcard">
+            <h5 class="table-title">Latest Orders</h5>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ORDER ID</th>
+                        <th>STORE</th>
+                        <th>USER</th>
+                        <th>ADDRESS</th>
+                        <th>STATUS</th>
+                        <th>ORDER TIME</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let foodinfo of foodData">
+                        <td>{{foodinfo.oderID}}</td>
+                        <td>{{foodinfo.store}}</td>
+                        <td>{{foodinfo.user}}</td>
+                        <td>{{foodinfo.address}}</td>
+                        <td>{{foodinfo.status}}</td>
+                        <td>{{foodinfo.orderDate}}</td>
+                        <td>
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Options</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item">Edit Order</a>
+                                    <a class="dropdown-item">Assign Delivery Boy</a>
+                                    <a class="dropdown-item">Print Bill</a>
+                                    <a class="dropdown-item">Cancel Order</a>
+                                </div>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+</div>   
+</div>
+
