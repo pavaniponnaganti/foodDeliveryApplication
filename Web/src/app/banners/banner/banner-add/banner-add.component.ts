@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BannerService } from '../../banner.service';
 import { bannerDTO } from './bannermodel';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-banner-add',
@@ -8,11 +9,18 @@ import { bannerDTO } from './bannermodel';
   styleUrls: ['./banner-add.component.scss']
 })
 export class BannerAddComponent implements OnInit {
-
+ editdata: any;
   bannermod : bannerDTO  = new bannerDTO();
-  constructor(private bannerAddService :BannerService) { }
+  constructor(private bannerAddService :BannerService, public route: ActivatedRoute) { 
+    this.route.params.subscribe(res=> this.editdata = res)
+    console.log(this.editdata);
+    this.bannermod.city = this.editdata.city;
+    this.bannermod.position = this.editdata.position;
+    this.bannermod.status = this.editdata.status;
+  }
 
   ngOnInit() {
+    //this.bannermod = this.editdata;
   }
 
   // bannerAddObj = {
@@ -23,11 +31,12 @@ export class BannerAddComponent implements OnInit {
   //   restaurant:'krithunga'
   // }
 
-  save(){
+  save(banner :any){
+    console.log(banner);
     console.log(this.bannermod);
     this.bannerAddService.bannerAdd(this.bannermod, result =>{
       console.log(result);
     })
   }
-  
+   
 }

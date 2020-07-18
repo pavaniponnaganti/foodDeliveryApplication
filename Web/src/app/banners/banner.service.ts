@@ -38,6 +38,25 @@ bannerDelete(bannerDelObj:any, callback:(bannerDel) => void){
   })
 }
 
+manageCities(callback: (managecitieslist) => void)
+{
+  this.http.get(environment.apiurl +"manage-cities").subscribe(managecitieslist =>{
+    callback(managecitieslist);
+  })
+}
+
+manageCitiesAdd(manageCitiesObj: any, callback:(manageCitiesAdd) => void){
+      this.http.post(environment.apiurl+ "manage-cities-add", manageCitiesObj).subscribe(managecitiesadd =>{
+        callback(managecitiesadd);
+      })
+}
+
+manageCitiesDelete(manageCitiesDelObj: any, callback:(manageCitiesDel) => void) {
+  this.http.post(environment.apiurl +"manage-cities-delete", manageCitiesDelObj).subscribe(managecitiesdel =>{
+    callback(managecitiesdel);
+  })
+}
+
 }
 
 

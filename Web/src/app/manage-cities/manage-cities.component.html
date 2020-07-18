@@ -12,10 +12,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                        <!-- {{mgCitiesList | json}} -->
+                        <tr *ngFor="let managecityInfo of mgCitiesList">
+                            <td>{{managecityInfo.name}}</td>
+                            <td>{{managecityInfo.status}}</td>
+                            <td>
+                                <button class="btn" (click)="deleteRecord(managecityInfo.name)"> delete</button>
+                                <button class="btn"> edit</button>
+                           </td> 
                         </tr>
                     </tbody>
                  </table>

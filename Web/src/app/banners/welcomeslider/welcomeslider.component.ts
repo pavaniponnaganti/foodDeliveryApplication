@@ -17,7 +17,7 @@ export class WelcomesliderComponent implements OnInit {
 
   }
   addnewpageclick()
-  {
+  { 
       this.router.navigateByUrl('welcomeslider-add');
   }
 

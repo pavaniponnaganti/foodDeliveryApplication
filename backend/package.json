@@ -5,10 +5,8 @@
   "main": "app.ts",
   "scripts": {
     "start": "node ./dist/app.js",
-    "start:dev":"nodemon --exec ts-node ./src/app.ts"
-
+    "start:dev": "nodemon --exec ts-node ./src/app.ts"
   },
-  
   "author": "AR.PP",
   "license": "ISC",
   "devDependencies": {

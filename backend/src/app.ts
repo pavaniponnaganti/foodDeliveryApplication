@@ -139,14 +139,14 @@ app.get('/bannerlist', (req,res) =>
 app.get('/welcomeslider',(req,res) =>
 {
   res.send({
-    result: welcomSliderInfo
+    result: welcomSliderInfo 
   });
 })
 
 app.get('/manage-cities',(req,res)=>
 {
   res.send({
-    result:manageCitiesList
+    data:manageCitiesList
   })
 })
 
@@ -198,6 +198,33 @@ app.post('/bannerDelete',(req,res) =>{
           result:bannerList
         });
       }
+  }
+})
+
+app.post('/manage-cities-add',(req,res) =>{
+  if(req.body.name != '' && req.body.status != ''){
+    var manageCities = {
+      name: req.body.name,
+      status: req.body.status
+    }
+    manageCitiesList.push(manageCities);
+    res.send({
+      message:'data has loaded finally',
+      data: manageCitiesList
+    });
+  }
+})
+
+app.post('/manage-cities-delete',(req,res) =>{
+  for(var i=0; i<= manageCitiesList.length; i++)
+  {
+    if(manageCitiesList[i].name == req.body.name){
+      manageCitiesList.splice(i,1);
+      res.send({
+        message:'recod deleted successfully',
+        resss:manageCitiesList
+      });
+    }
   }
 })
 

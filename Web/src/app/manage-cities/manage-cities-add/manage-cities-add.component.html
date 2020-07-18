@@ -7,13 +7,13 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control" id="usr" name="username">
+                            <input type="text" class="form-control" id="usr" [(ngModel)]="managecitiesmod.name" name="username">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="sel1">Status</label>
-                            <select class="form-control" id="sel1"  name="sellist1">
+                            <select class="form-control" id="sel1" [(ngModel)]="managecitiesmod.status" name="sellist1">
                                 <option>Active</option>
                                 <option>InActive</option>              
                               </select>                            
@@ -21,11 +21,11 @@
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <button class="btn btn-success">  
+                    <button class="btn btn-success" (click)="save(managecitiesmod)">  
                         SAVE CHANGES
                     </button>
                 </div> 
             </div>
         </div>
     </div>
-</div>
+</div> 

@@ -39,7 +39,10 @@ export class BannerComponent implements OnInit {
       console.log(data);
       this.bannerList();
     })
-    alert(city);
+    alert(city); 
   }
-
+  edit(selectedbanner: any){
+    console.log(selectedbanner);
+    this.route.navigate(['/banner-add',selectedbanner])
+  }
 }

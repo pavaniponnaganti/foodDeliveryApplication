@@ -16,19 +16,19 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let banneritem of bannerDetail">
+                        <!-- {{banneritem | json}} -->
                         <td>{{banneritem.city}}</td>
                         <td>{{banneritem.image}}</td>
                         <td>{{banneritem.position}}</td>   
                         <td>{{banneritem.status}}</td>    
                         <td>
                              <button class="btn" (click)="deleteRecord(banneritem.city)"> delete</button>
-                             <button class="btn"> edit</button>
+                             <button class="btn" (click)="edit(banneritem)"> edit</button>
                         </td>                 
                     </tr>
                 </tbody>
             </table>
-           </div>
-            
+           </div>             
         </div>
     </div>
 </div>
