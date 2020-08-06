@@ -9,11 +9,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./banner-add.component.scss']
 })
 export class BannerAddComponent implements OnInit {
- editdata: any;
+  editdata: any;
   bannermod : bannerDTO  = new bannerDTO();
+  updateEnable= false;
   constructor(private bannerAddService :BannerService, public route: ActivatedRoute) { 
-    this.route.params.subscribe(res=> this.editdata = res)
-    console.log(this.editdata);
+    this.route.params.subscribe(res=> {
+      console.log('Redirectd Data', res);
+      this.editdata =res;
+      //this.updateEnable =true;
+    })
+    //console.log(this.editdata);
     this.bannermod.city = this.editdata.city;
     this.bannermod.position = this.editdata.position;
     this.bannermod.status = this.editdata.status;

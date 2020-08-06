@@ -59,8 +59,11 @@
                     </div>                            
                 </div>
                 <div class="row">
-                    <button class="btn btn-success" (click)="save(bannermod)">  
+                    <button *ngIf="!editdata.city" class="btn btn-success" (click)="save(bannermod)">  
                         SAVE CHANGES
+                    </button>
+                    <button *ngIf="editdata.city" class="btn btn-success" (click)="save(bannermod)">  
+                    Update
                     </button>
                 </div>                
             </form>

@@ -15,9 +15,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let banneritem of bannerDetail">
-                        <!-- {{banneritem | json}} -->
-                        <td>{{banneritem.city}}</td>
+                    <tr *ngFor="let banneritem of bannerDetail ; let index =i">
+                         <!-- {{banneritem | json}} -->
+                        <td>{{banneritem.city}} {{i}}</td>
                         <td>{{banneritem.image}}</td>
                         <td>{{banneritem.position}}</td>   
                         <td>{{banneritem.status}}</td>    

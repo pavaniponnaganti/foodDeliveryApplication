@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-discount-offers',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscountOffersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
   }
 
+  addNewPageClick(){
+    this.route.navigateByUrl('discount-offers-add');
+  }
 }

@@ -25,7 +25,8 @@ import { AppUsersComponent } from './app-users/app-users.component';
 import { WelcomesliderAddnewComponent } from './banners/welcomeslider/welcomeslider-addnew/welcomeslider-addnew.component';
 import { BannerAddComponent } from './banners/banner/banner-add/banner-add.component';
 import {FormsModule} from '@angular/forms';
-import { ManageCitiesAddComponent } from './manage-cities/manage-cities-add/manage-cities-add.component'
+import { ManageCitiesAddComponent } from './manage-cities/manage-cities-add/manage-cities-add.component';
+import { DiscountOffersAddComponent } from './discount-offers/discount-offers-add/discount-offers-add.component'
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ManageCitiesAddComponent } from './manage-cities/manage-cities-add/mana
     AppUsersComponent,
     WelcomesliderAddnewComponent,
     BannerAddComponent,
-    ManageCitiesAddComponent
+    ManageCitiesAddComponent,
+    DiscountOffersAddComponent
   ],
   imports: [
     BrowserModule,

@@ -76,6 +76,7 @@ const welcomSliderInfo=[
 
 const bannerList=[
   {
+   id:1,
    city:'bangalore',
    image:'',
    position:'Top',
@@ -83,6 +84,7 @@ const bannerList=[
    restaurant:'bawarchi'
   },
   {
+    id:2,
     city:'Tirunammalai',
     image:'',
     position:'Top',
@@ -90,6 +92,7 @@ const bannerList=[
     restaurant:'paradise'
    },
    {
+     id:3,
     city:'Vizag',
     image:'',
     position:'Top',
@@ -172,8 +175,10 @@ var slider = {
 })
 
 app.post('/bannerAdd',(req,res) => {
+  const id = 0;
   if(req.body.city != '' && req.body.image != '' && req.body.position != '' && req.body.status != '' && req.body.restaurant != ''){
     var banner = {
+      id:id+1,
       city: req.body.city,
       image: req.body.image,
       position: req.body.position,
@@ -187,6 +192,10 @@ app.post('/bannerAdd',(req,res) => {
     });
   }
 })
+//app.post('/bannerUpdate',(req,res)=>{
+  //for(let i)
+//})
+
 
 app.post('/bannerDelete',(req,res) =>{
   // removeByAttr(bannerList,'city','bangalore');

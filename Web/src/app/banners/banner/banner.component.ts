@@ -45,4 +45,7 @@ export class BannerComponent implements OnInit {
     console.log(selectedbanner);
     this.route.navigate(['/banner-add',selectedbanner])
   }
+  amal(){
+    const data = 8;
+  }
 }

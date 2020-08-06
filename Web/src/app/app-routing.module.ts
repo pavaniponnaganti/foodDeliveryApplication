@@ -21,6 +21,7 @@ import { CompletedOrdersComponent } from './manage-orders/completed-orders/compl
 import { WelcomesliderAddnewComponent } from './banners/welcomeslider/welcomeslider-addnew/welcomeslider-addnew.component';
 import { BannerAddComponent } from './banners/banner/banner-add/banner-add.component';
 import { ManageCitiesAddComponent } from './manage-cities/manage-cities-add/manage-cities-add.component';
+import { DiscountOffersAddComponent } from './discount-offers/discount-offers-add/discount-offers-add.component';
 
 
 const routes: Routes = [
@@ -107,6 +108,10 @@ const routes: Routes = [
  {
    path:'manage-cities-add',
    component:ManageCitiesAddComponent
+ },
+ {
+   path:'discount-offers-add',
+   component:DiscountOffersAddComponent
  }
 
 ];
