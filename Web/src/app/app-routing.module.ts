@@ -22,11 +22,17 @@ import { WelcomesliderAddnewComponent } from './banners/welcomeslider/welcomesli
 import { BannerAddComponent } from './banners/banner/banner-add/banner-add.component';
 import { ManageCitiesAddComponent } from './manage-cities/manage-cities-add/manage-cities-add.component';
 import { DiscountOffersAddComponent } from './discount-offers/discount-offers-add/discount-offers-add.component';
+import { StaffMembersAddComponent } from './staff-members/staff-members-add/staff-members-add.component';
+import { NewOrderAddComponent } from './manage-orders/new-order/new-order-add/new-order-add.component';
+import { RunningOrdersAddComponent } from './manage-orders/running-orders/running-orders-add/running-orders-add.component';
+import { CancelledOrdersAddComponent } from './manage-orders/cancelled-orders/cancelled-orders-add/cancelled-orders-add.component';
+import { CompletedOrdersAddComponent } from './manage-orders/completed-orders/completed-orders-add/completed-orders-add.component';
+
 
 
 const routes: Routes = [
   {
-    path:'home',
+    path:'',
     component:HomeComponent
   },
   {
@@ -112,6 +118,26 @@ const routes: Routes = [
  {
    path:'discount-offers-add',
    component:DiscountOffersAddComponent
+ },
+ {
+   path:'staff-mem-add',
+   component:StaffMembersAddComponent
+ },
+ {
+   path:'new-order-add',
+   component:NewOrderAddComponent
+ },
+ {
+   path:'running-order-add',
+   component:RunningOrdersAddComponent
+ },
+ {
+   path:'cancelled-order-add',
+   component:CancelledOrdersAddComponent
+ },
+ {
+   path:'completed-orders-add',
+   component:CompletedOrdersAddComponent
  }
 
 ];

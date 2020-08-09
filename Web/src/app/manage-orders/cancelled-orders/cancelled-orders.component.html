@@ -1,1 +1,54 @@
-<p>cancelled-orders works!</p>
+<div class="padding-left-250">
+    <h4>New Orders</h4>
+     <div class="col-sm-12">
+        <div class="boxcard">
+            <button type="button" class="btn btn-warning text-white float-right" (click)="addNewPageClick()" >Add New</button>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Store</th>
+                        <th>User</th>
+                        <th>Address</th>
+                        <th>Items</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>120695</td>
+                    <td>General Store</td>
+                    <td>PavaniPonnaganti</td>
+                    <td>VishakaPattanam</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Small-Dall Makhni</td>
+                                    <td>1</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Option</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item">Edit Order</a>
+                                <a class="dropdown-item">Confirm Order</a>
+                                <a class="dropdown-item">Cancel Order</a>
+                            </div>
+                        </div>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+     </div>
+</div>

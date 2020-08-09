@@ -210,6 +210,7 @@ app.post('/bannerDelete',(req,res) =>{
   }
 })
 
+
 app.post('/manage-cities-add',(req,res) =>{
   if(req.body.name != '' && req.body.status != ''){
     var manageCities = {

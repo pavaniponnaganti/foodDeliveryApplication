@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-app-users',
@@ -10,6 +11,7 @@ export class AppUsersComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      $('#example1').DataTable();
   }
 
 }

@@ -26,7 +26,12 @@ import { WelcomesliderAddnewComponent } from './banners/welcomeslider/welcomesli
 import { BannerAddComponent } from './banners/banner/banner-add/banner-add.component';
 import {FormsModule} from '@angular/forms';
 import { ManageCitiesAddComponent } from './manage-cities/manage-cities-add/manage-cities-add.component';
-import { DiscountOffersAddComponent } from './discount-offers/discount-offers-add/discount-offers-add.component'
+import { DiscountOffersAddComponent } from './discount-offers/discount-offers-add/discount-offers-add.component';
+import { StaffMembersAddComponent } from './staff-members/staff-members-add/staff-members-add.component';
+import { NewOrderAddComponent } from './manage-orders/new-order/new-order-add/new-order-add.component';
+import { RunningOrdersAddComponent } from './manage-orders/running-orders/running-orders-add/running-orders-add.component';
+import { CancelledOrdersAddComponent } from './manage-orders/cancelled-orders/cancelled-orders-add/cancelled-orders-add.component';
+import { CompletedOrdersAddComponent } from './manage-orders/completed-orders/completed-orders-add/completed-orders-add.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,12 @@ import { DiscountOffersAddComponent } from './discount-offers/discount-offers-ad
     WelcomesliderAddnewComponent,
     BannerAddComponent,
     ManageCitiesAddComponent,
-    DiscountOffersAddComponent
+    DiscountOffersAddComponent,
+    StaffMembersAddComponent,
+    NewOrderAddComponent,
+    RunningOrdersAddComponent,
+    CancelledOrdersAddComponent,
+    CompletedOrdersAddComponent
   ],
   imports: [
     BrowserModule,
